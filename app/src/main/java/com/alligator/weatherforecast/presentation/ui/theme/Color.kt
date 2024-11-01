@@ -1,4 +1,4 @@
-package com.alligator.weatherforecast.ui.theme
+package com.alligator.weatherforecast.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

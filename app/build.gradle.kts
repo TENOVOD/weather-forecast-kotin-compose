@@ -10,7 +10,7 @@ plugins {
 
 android {
     namespace = "com.alligator.weatherforecast"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.alligator.weatherforecast"
@@ -19,10 +19,18 @@ android {
         versionCode = 1
         versionName = "1.0"
 
+        buildConfigField(
+            "String",
+            "GEO_API_KEY",
+            "\"${project.findProperty("GEO_API_KEY")}\""
+        )
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
         }
+    }
+    buildFeatures {
+       buildConfig=true
     }
 
     buildTypes {

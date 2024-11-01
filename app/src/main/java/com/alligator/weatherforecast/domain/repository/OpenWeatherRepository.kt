@@ -6,9 +6,9 @@ import com.alligator.weatherforecast.data.model.response.GeoResponse
 
 interface OpenWeatherRepository {
 
-    suspend fun getCityCoordinateByName(name:String): GeoResponse
+    suspend fun getCityCoordinateByName(name:String): List<GeoResponse>
 
-    suspend fun getForecastFor5days(latitude:Float, longitude:Float):ForecastWeatherResponse
+    suspend fun getForecastFor5days(latitude:Double, longitude:Double): ForecastWeatherResponse
 
-    suspend fun getCurrentWeather(latitude:Float, longitude:Float):CurrentWeatherResponse
+    suspend fun getCurrentWeather(latitude:Double, longitude:Double): CurrentWeatherResponse
 }

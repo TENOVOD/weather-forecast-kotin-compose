@@ -24,7 +24,7 @@ data class ForecastWeatherResponse(
 
         val main: MainInfo,
 
-        val weather: Weather,
+        val weather: List<Weather> ,
 
         val wind:Wind,
 

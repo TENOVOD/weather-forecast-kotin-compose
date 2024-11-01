@@ -14,7 +14,7 @@ data class CurrentWeatherResponse(
     @SerialName("coord")
     val coordinate: Coordinate,
 
-    val weather: Weather,
+    val weather:List<Weather> ,
 
     val main: MainInfo,
 

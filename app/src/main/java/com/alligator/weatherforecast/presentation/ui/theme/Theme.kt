@@ -1,4 +1,4 @@
-package com.alligator.weatherforecast.ui.theme
+package com.alligator.weatherforecast.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build
